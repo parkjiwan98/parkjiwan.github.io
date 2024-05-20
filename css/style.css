@@ -387,6 +387,9 @@ a{color: inherit; text-decoration: none;}
     .imgesBox img{
         width: 100%; height: 100%;
     }
+    .imgesBox:hover{
+        box-shadow: 10px 10px 0 rgb(157, 174, 226);
+    }
     .textBox{
         width: 31.25vw; height: 23.4375vw;
     }
