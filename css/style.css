@@ -380,15 +380,32 @@ a{color: inherit; text-decoration: none;}
         display: none;
     }
     .imgesBox{
-        width: 41.66vw; height: 31.25vw;
+        position: relative;
+        width: 41.66vw;
+        height: 31.25vw;
         margin-right: 2.6041vw;
         background-color: #e2e2e2;
+        overflow: hidden;
+        transition: border-radius 0.5s ease;
     }
     .imgesBox img{
         width: 100%; height: 100%;
     }
     .imgesBox:hover{
         box-shadow: 10px 10px 0 rgb(157, 174, 226);
+        border-radius: 100px;
+    }
+    .imgesBox:hover::before {
+        content: "click";
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: initial;
+        color: #1f1f1f;
+        font-size: 48px;
+        padding: 8px 16px;
+        border-radius: 8px;
     }
     .textBox{
         width: 31.25vw; height: 23.4375vw;
