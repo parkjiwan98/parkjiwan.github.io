@@ -1,0 +1,115 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+li{text-decoration: inherit; color: inherit;}
+a{text-decoration: inherit; color: inherit;}
+button{border-style: none;}
+img{vertical-align: top;}
+
+main{width: 100%; height: 300px; position: relative;}
+main .mainimg{
+    width: 100%; height: 100%;
+}
+main h1{
+    position: absolute;
+    right: 33%;
+    top: 30%;
+}
+
+section{
+    width: 100%;
+    margin: 0 auto;
+}
+section h3{
+    font-weight: 700;
+    text-align: center;
+    background-color: gray;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.txt{
+    width: 100%;
+    margin: 0 auto;
+}
+.title{
+    margin: 0 auto;
+    width: 100%;
+    height: 60vh;
+    font-size: 20px;
+    font-weight: 700;
+    /* padding-bottom: 20px;
+    margin-bottom: 20px; */
+    display: flex;
+}
+.title .img{
+    width: 70%;
+    height: 100%;
+    margin-right: 25px;
+    margin-left: 25px;
+    display: none;
+}
+.txtbox{
+    width: 90%;
+    height: 100%;
+    margin: 10px auto;
+    box-sizing: border-box;
+    /*세로 가운데 정렬*/
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /*세로 가운데 정렬*/
+}
+.txtbox h1{
+    font-size: 100px;
+}
+.txtbox h2{
+    font-size: 75px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+.txtbox ul{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+}
+.txtbox ul li{
+    font-size: 14px;
+    color: gray;
+    font-weight: normal;
+}
+.txtbox ul li:first-child{
+    margin-top: 25px;
+}
+
+.title:nth-child(2n){
+    flex-direction: row-reverse /*위치 반전*/
+}
+.title:nth-child(2n) .img{
+    margin-left: 25px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media all and (min-width:1280px){
+    main{
+        height: 100vh;
+    }
+    .title{
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .title .img{
+        display: block;
+    }
+    .txtbox{
+        width: 25%;
+        justify-content: center;
+    }
+
+}

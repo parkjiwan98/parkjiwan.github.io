@@ -1,0 +1,332 @@
+@charset "utf-8";
+@font-face{
+    font-family:'Noto Sans KR';
+    src: url(NotoSansKR-VariableFont_wght.ttf);
+}
+*{
+    margin: 0; padding: 0;
+    font-family: Noto Sans KR;
+}
+ul{list-style: none;}
+li{text-decoration: inherit; color: inherit;}
+a{text-decoration: inherit; color: inherit;}
+button{border-style: none; background-color: transparent}
+img{vertical-align: top;}
+
+body{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    background: #fff;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+/*모바일*/
+.hwrap{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 997;
+}
+.hwrap h1 img{
+    width: 35%;
+    height: auto;
+    position: absolute;
+}
+.hwrap .manu{
+    width: 50px; height: auto;
+    position: absolute;
+    right: 0; top: 0;
+}
+.hwrap .manu img{
+    width: 50px;
+    height: 50px;
+    filter: invert(100%);
+}
+
+.hwrap .nav{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0; right: -100%;
+    z-index: 998;
+}
+.hwrap .nav .close{
+    width: 50px;
+    height: 50px;
+}
+.hwrap .nav .close img{
+    position: absolute;
+    top: 4px; right: 4px;
+    width: 45px;
+    height: 45px;
+}
+.hwrap .nav li{
+    background-color: #fff;
+    color: #333;
+    border-top: 1px solid #444;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 15px 0 15px 20px;
+}
+.hwrap .nav li:last-child{
+    border-bottom: 1px solid #444;
+}
+.hwrap .nav li:hover{
+    background-color: #000;
+    color: #fff;
+}
+.sub li{
+    display: none;
+}
+.hwrap .nav li:hover .sub li{
+    display: block;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #333;
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.foot{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10px;
+    color: #fff;
+    white-space: normal;
+    position: relative;
+}
+footer .box{
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+footer .box .txtbox1,.txtbox2{
+    line-height: 30px;
+}
+footer .box .txtbox1{
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #fff;
+    font-size: 16px;
+}
+footer .box .txtbox1 a:nth-child(1),a:nth-child(3){
+    font-weight: 700;
+}
+footer .box .txtbox2{
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #fff;
+}
+.footer2{
+    position: relative;
+}
+.footer2 .sns{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.footer2 .sns div img{
+    width: 50px;
+    height: 50px;
+}
+
+footer .f_lang{
+    width: 130px;
+    height: 18px;
+    margin: 20px;
+    margin-top: 50px;
+    padding: 4px 0 4px 10px;
+    color: #fff;
+    border: 1px solid #666;
+    font-size: 11px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    background-image: url(../imges/btn_language_open.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.f_lang.on{
+    background-image: url(../imges/btn_language_close.png);
+}
+.f_lang.on .l_pop{
+    display: block;
+}
+.f_lang .l_pop{
+    width: 100%;
+    background-color: gray;
+    border: 1px solid #666;
+    position: absolute;
+    left: -1px; bottom: 26px;
+    display: none;
+}
+.l_pop a{
+    text-decoration: inherit;
+    color: #fff;
+    display: block;
+    border-bottom: 1px solid #333;
+    margin: 0 5px;
+    padding: 5px 0;
+}
+.l_pop a:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+h6{
+    width: 100%;
+    color: #fff;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #fff;
+}
+
+/*태블릿*/
+@media all and (min-width:834px){
+    .hwrap{
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    .hwrap h1 img{
+        width: 200px;
+        height: 50px;
+    }
+    .hwrap .nav{
+        width: 100%;
+        height: 50%;
+        top: -100%;
+        right: 0;
+        display: flex;
+        padding: 50px;
+        box-sizing: border-box;
+    }
+    .hwrap .nav li{
+        width: 100%;
+        height: 25px;
+        background-color: #fff;
+        color: #333;
+        border-top: none;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px 10px 10px 10px;
+        margin: 0 auto;
+        text-align: center;
+        border-bottom: 1px solid #000;
+    }
+    .hwrap .nav li:last-child{
+        border-bottom: 1px solid #000;;
+    }
+    .hwrap .nav li:hover{
+        background-color: inherit;
+        color: #000;
+    }
+    .hwrap .nav .close{
+        width: 0%;
+        height: 0;
+    }
+    .hwrap .nav li .sub li{
+        display: block;
+        font-size: 13px;
+        margin-left: -10px;
+        color: #000;
+        border-bottom: none;
+    }
+    .hwrap .nav li .sub li:first-child{
+        margin-top: 40px;
+    }
+}
+
+/*pc*/
+@media all and (min-width:1280px){
+    .hwrap{
+        width: 100%;
+        height: 75px;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: flex;
+    }
+    .hwrap:hover{
+        height: 500px;
+        background-color: #fff;
+        transition: all ease .3s;
+    }
+    .hwrap h1 img{
+        width: 250px;
+        height: 50px;
+        z-index: 999;
+        margin-left: 25px;
+        margin-top: 10px;
+    }
+    .hwrap .manu{
+        display: none;
+    }
+    .hwrap .nav{
+        width: 1000px;
+        height: 75px;
+        position: sticky;
+        background-color: rgba(0, 0, 0, 0);
+        padding: 0;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .hwrap .nav li{
+        width: 100px;
+        background-color: rgba(0, 0, 0, 0);
+        color: #fff;
+        margin-top: 10px;
+        border-bottom: none;
+    }
+    .hwrap .nav li:last-child{
+        border-bottom: none;
+    }
+    .hwrap .nav .close{
+        display: none;
+    }
+    .hwrap .nav li:hover{
+        background-color: inherit;
+    }
+    .hwrap:hover .nav{
+        border-bottom: 1px solid #000;
+    }
+    .hwrap:hover .nav li{
+        color: #000;
+    }
+    .hwrap:hover .nav li .sub li{
+        display: block;
+        font-size: 14px;
+        margin-left: -10px;
+    }
+    .hwrap:hover .nav li .sub li:first-child{
+        margin-top: 75px;
+    }
+    .hwrap .nav li .sub li{
+        display: none;
+    }
+
+    .foot{
+        width: 1000px;
+    }
+    footer .box{
+        width: 1000px;
+        display: flex;
+    }
+    footer .box .txtbox1{
+        margin: 0; padding: 0;
+        border: none;
+    }
+    footer .box .txtbox2{
+        margin: 0; padding: 0;
+        border: none;
+    }
+    footer .f_lang{
+        margin-left: 60px;
+    }
+    
+}

@@ -1,0 +1,304 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+li{text-decoration: inherit; color: inherit;}
+a{text-decoration: inherit; color: inherit;}
+button{border-style: none;}
+img{vertical-align: top;}
+
+main{width: 100%;}
+main .mainimg{
+    width: 100%; height: 25vh;
+}
+
+
+section{
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+}
+section h1{
+    font-size: 100px; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+section p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.con1{
+    width: 410px;
+    height: 444px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 30px;
+}
+.con1 img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.con1 .img h2{
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 990;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.con1 .txt{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.5s;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 25px;
+}
+.con1 .txt p{
+    font-size: 1.6vh;
+    display: block;
+    width: 80%; height: 60%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.con1:hover .txt{
+    opacity: 1;
+}
+.con1:hover .img h2{
+    opacity: 0;
+}
+
+.con2{
+    width: 410px;
+    height: 444px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 30px;
+}
+.con2 img{
+    width: 100%;
+    height: 100%;
+}
+.con2 .img h2{
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 990;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.con2 .txt{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.5s;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 25px;
+}
+.con2 .txt p{
+    font-size: 1.6vh;
+    display: block;
+    width: 80%; height: 60%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.con2:hover .txt{
+    opacity: 1;
+}
+.con2:hover .img h2{
+    opacity: 0;
+}
+
+.con3{
+    width: 410px;
+    height: 444px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 30px;
+}
+.con3 img{
+    width: 100%;
+    height: 100%;
+}
+.con3 .img h2{
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 990;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.con3 .txt{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.5s;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 25px;
+}
+.con3 .txt p{
+    font-size: 1.6vh;
+    display: block;
+    width: 80%; height: 60%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.con3:hover .txt{
+    opacity: 1;
+}
+.con3:hover .img h2{
+    opacity: 0;
+}
+
+.con4{
+    width: 410px;
+    height: 444px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 30px;
+}
+.con4 img{
+    width: 100%;
+    height: 100%;
+}
+.con4 .img h2{
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 990;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.con4 .txt{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.5s;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 25px;
+}
+.con4 .txt p{
+    font-size: 1.7vh;
+    display: block;
+    width: 80%; height: 60%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.con4:hover .txt{
+    opacity: 1;
+}
+.con4:hover .img h2{
+    opacity: 0;
+}
+.con5{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.con5 img{
+    width: 90%;
+
+}
+
+
+
+
+
+
+
+@media all and (min-width:834px){
+    main .mainimg{
+        height: 40vh;
+    }
+    
+    .sectionright{
+        margin: 0 auto;
+        position: relative;
+        width: 80%;
+        height: 1800px;
+    }
+    .con1{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .con2{
+        position: absolute;
+        left: 0;
+        top: 444px;
+    }
+    .con3{
+        position: absolute;
+        right: 0;
+        top: 888px;
+    }
+    .con4{
+        position: absolute;
+        left: 0;
+        top: 1332px;
+    }
+}
+
+
+
+
+
+
+
+
+@media all and (min-width:1280px){
+    main .mainimg{
+        height: 60vh;
+    }
+    section{
+        display: flex;
+        width: 100%; /*!*/
+        height: 1000px; /*!*/
+        text-align: center;
+        position: relative;
+    }
+
+    section .left{
+        width: 45%;
+        position: fixed;
+        margin: 25px;
+        margin-top: 250px;
+        box-sizing: border-box;
+    }
+    .sectionright{
+        width: 50%;
+        height: 110%;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+}
